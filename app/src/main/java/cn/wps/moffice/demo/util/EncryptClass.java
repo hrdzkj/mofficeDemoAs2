@@ -6,6 +6,7 @@ package cn.wps.moffice.demo.util;
  * comment:主要是对文件数据的简单加密，使用异或对数据加密，
  * 同时可以识别某路径下的文件是否加密
  */
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -156,7 +157,8 @@ public class EncryptClass
 	 * @return
 	 * @throws RemoteException
 	 */
-	
+
+
 	public static int encryptOpenFile(String path, OfficeOutputStream output) throws RemoteException
 	{
 		final boolean isEncrypt = isEncryptFile(path);

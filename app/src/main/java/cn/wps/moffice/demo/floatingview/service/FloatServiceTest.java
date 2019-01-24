@@ -38,6 +38,7 @@ import cn.wps.moffice.demo.MyApplication;
 import cn.wps.moffice.demo.R;
 import cn.wps.moffice.demo.floatingview.FloatingFunc;
 import cn.wps.moffice.demo.util.Define;
+import cn.wps.moffice.demo.util.FileUtil;
 import cn.wps.moffice.demo.util.ToastUtil;
 import cn.wps.moffice.demo.util.Util;
 import cn.wps.moffice.service.OfficeService;
@@ -51,6 +52,9 @@ import cn.wps.moffice.service.doc.WrapType;
 import cn.wps.moffice.service.pdf.PDFReader;
 import cn.wps.moffice.service.presentation.Presentation;
 import cn.wps.moffice.service.spreadsheet.Workbook;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 
 public class FloatServiceTest extends Service implements OnClickListener {
 
@@ -421,7 +425,21 @@ public class FloatServiceTest extends Service implements OnClickListener {
                 } else if (Util.isExcelFile(docPath)) {
                     openWorkBook();
                 } else {
-                    openDocument();
+                    //openDocument();
+                    FileUtil.downLoadFile(FileUtil.testDowloadFile)
+                            .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+                            .subscribe(aBoolean -> {
+                                if (aBoolean.booleanValue()) {
+                                    ToastUtil.showShort("开始打开文件");
+                                    openDocument();
+                                    //ToastUtil.showShort("下载文件成功");
+                                }else{
+                                    ToastUtil.showShort("下载文件异常");
+                                }
+                            }, throwable -> {
+                                throwable.printStackTrace();
+                                ToastUtil.showShort("网络异常");
+                            });
                 }
                 break;
             case R.id.btnCloseFile:
@@ -1622,7 +1640,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
         Log.d("FloatingService", "onDestroy");
 
         FloatingFunc.close(this.getApplicationContext());
-        if (mService != null) unbindService(connection);
+        if (connection != null) unbindService(connection);
 
         mDoc = null;
         mPdfReader = null;
@@ -1689,7 +1707,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
         intent.setPackage(Define.PACKAGENAME_KING_PRO);
         boolean isbindService = false;
         try {
-            isbindService = bindService(intent, connection, Service.BIND_AUTO_CREATE);
+            isbindService = MyApplication.getInstance().bindService(intent, connection, Service.BIND_AUTO_CREATE);
         } catch (SecurityException e) {
             e.printStackTrace();
         } finally {

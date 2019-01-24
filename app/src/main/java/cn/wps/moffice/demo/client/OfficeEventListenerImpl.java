@@ -9,6 +9,7 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import android.annotation.SuppressLint;
 import android.os.RemoteException;
 import android.util.Log;
 import cn.wps.moffice.client.ActionType;
@@ -19,7 +20,12 @@ import cn.wps.moffice.client.OfficeOutputStream;
 import cn.wps.moffice.demo.floatingview.service.FloatServiceTest;
 import cn.wps.moffice.demo.util.Define;
 import cn.wps.moffice.demo.util.EncryptClass;
+import cn.wps.moffice.demo.util.FileUtil;
 import cn.wps.moffice.demo.util.SettingPreference;
+import cn.wps.moffice.demo.util.ToastUtil;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 
 public class OfficeEventListenerImpl extends OfficeEventListener.Stub 
 {
@@ -39,7 +45,13 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			throws RemoteException 
 	{
 		Log.d("OfficeEventListener", "onOpenFile ：" + path);
-		
+        if (FileUtil.mTempStream!=null && output!=null){
+           byte[] tempByte= FileUtil.mTempStream.toByteArray();
+            output.write(tempByte,0,tempByte.length);
+            return 0;
+        }
+        return -1;
+        /*
 		if (!mIsValidPackage)
 			return -1;
 
@@ -51,14 +63,26 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			return EncryptClass.encryptOpenFile(path, output);
 		else
 			return EncryptClass.normalOpenFile(path, output);
+			*/
 
 	}
 	
+	@SuppressLint("CheckResult")
 	@Override
 	public int onSaveFile(OfficeInputStream input, String path)throws RemoteException 
 	{
+	    /*
 		Log.d("OfficeEventListener", "onSaveFile : " + path);
-		
+		FileUtil.updateFile(input).
+				subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
+				.subscribe(aBoolean -> {
+                     ToastUtil.showShort("不落地保存结果:"+aBoolean.booleanValue());
+				}, throwable -> {
+					throwable.printStackTrace();
+					ToastUtil.showShort("上传文件时网络异常");
+				});
+		return 0;
+		*/
 		SettingPreference settingPreference;
 		settingPreference 	= 	new SettingPreference(this.service.getApplicationContext());
 		boolean isEncrypt 	= settingPreference.getSettingParam(Define.ENCRYPT_FILE, false);
@@ -67,6 +91,8 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			return EncryptClass.encryptSaveFile(input, path);
 		else
 			return EncryptClass.normalSaveFile(input, path);
+
+
 	}
 
 	@Override

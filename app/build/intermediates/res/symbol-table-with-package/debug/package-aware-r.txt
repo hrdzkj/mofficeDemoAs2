@@ -335,8 +335,10 @@ string typeText
 string undo
 string xPos
 string yPos
+style ActivityTranslucent
 style AppBaseTheme
 style AppTheme
+style DialogTransparent
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
 style TextAppearance_Compat_Notification_Info_Media
@@ -351,3 +353,4 @@ style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont font fontStyle fontWeight
+xml util_code_provider_paths

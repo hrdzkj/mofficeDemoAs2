@@ -427,20 +427,22 @@ public final class R {
     public static final int yPos=0x7f0b0030;
   }
   public static final class style {
-    public static final int AppBaseTheme=0x7f0c0000;
-    public static final int AppTheme=0x7f0c0001;
-    public static final int TextAppearance_Compat_Notification=0x7f0c0002;
-    public static final int TextAppearance_Compat_Notification_Info=0x7f0c0003;
-    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0c0004;
-    public static final int TextAppearance_Compat_Notification_Line2=0x7f0c0005;
-    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0c0006;
-    public static final int TextAppearance_Compat_Notification_Media=0x7f0c0007;
-    public static final int TextAppearance_Compat_Notification_Time=0x7f0c0008;
-    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0c0009;
-    public static final int TextAppearance_Compat_Notification_Title=0x7f0c000a;
-    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0c000b;
-    public static final int Widget_Compat_NotificationActionContainer=0x7f0c000c;
-    public static final int Widget_Compat_NotificationActionText=0x7f0c000d;
+    public static final int ActivityTranslucent=0x7f0c0000;
+    public static final int AppBaseTheme=0x7f0c0001;
+    public static final int AppTheme=0x7f0c0002;
+    public static final int DialogTransparent=0x7f0c0003;
+    public static final int TextAppearance_Compat_Notification=0x7f0c0004;
+    public static final int TextAppearance_Compat_Notification_Info=0x7f0c0005;
+    public static final int TextAppearance_Compat_Notification_Info_Media=0x7f0c0006;
+    public static final int TextAppearance_Compat_Notification_Line2=0x7f0c0007;
+    public static final int TextAppearance_Compat_Notification_Line2_Media=0x7f0c0008;
+    public static final int TextAppearance_Compat_Notification_Media=0x7f0c0009;
+    public static final int TextAppearance_Compat_Notification_Time=0x7f0c000a;
+    public static final int TextAppearance_Compat_Notification_Time_Media=0x7f0c000b;
+    public static final int TextAppearance_Compat_Notification_Title=0x7f0c000c;
+    public static final int TextAppearance_Compat_Notification_Title_Media=0x7f0c000d;
+    public static final int Widget_Compat_NotificationActionContainer=0x7f0c000e;
+    public static final int Widget_Compat_NotificationActionText=0x7f0c000f;
   }
   public static final class styleable {
     /**
@@ -600,5 +602,8 @@ public final class R {
      * @attr name cn.wps.moffice.demo:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=2;
+  }
+  public static final class xml {
+    public static final int util_code_provider_paths=0x7f0e0000;
   }
 }

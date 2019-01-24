@@ -14,12 +14,12 @@
                         "endOffsets": "154,218,285,349,465,591,717,845,1017,1355"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,14,18,22,25",
+                        "startLines": "2,3,4,5,25,26,33,37,41,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,159,223,290,354,470,927,1221,1516,1688",
-                        "endLines": "2,3,4,5,6,7,14,18,24,29",
+                        "startOffsets": "55,159,223,290,1488,1604,2061,2355,2650,2822",
+                        "endLines": "2,3,4,5,25,26,33,37,43,48",
                         "endColumns": "103,63,66,63,115,125,125,127,12,12",
-                        "endOffsets": "154,218,285,349,465,591,1048,1344,1683,2021"
+                        "endOffsets": "154,218,285,349,1599,1725,2182,2478,2817,3155"
                     }
                 },
                 {
@@ -33,12 +33,31 @@
                         "endOffsets": "218,381,549,716"
                     },
                     "to": {
-                        "startLines": "8,11,15,19",
+                        "startLines": "27,30,34,38",
                         "startColumns": "4,4,4,4",
-                        "startOffsets": "596,764,1053,1349",
-                        "endLines": "10,13,17,21",
+                        "startOffsets": "1730,1898,2187,2483",
+                        "endLines": "29,32,36,40",
                         "endColumns": "12,12,12,12",
-                        "endOffsets": "759,922,1216,1511"
+                        "endOffsets": "1893,2056,2350,2645"
+                    }
+                },
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/res/values-v21/values-v21.xml",
+                    "from": {
+                        "startLines": "2,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,831",
+                        "endLines": "14,20",
+                        "endColumns": "12,12",
+                        "endOffsets": "826,1184"
+                    },
+                    "to": {
+                        "startLines": "6,19",
+                        "startColumns": "4,4",
+                        "startOffsets": "354,1130",
+                        "endLines": "18,24",
+                        "endColumns": "12,12",
+                        "endOffsets": "1125,1483"
                     }
                 }
             ]

@@ -31,6 +31,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.AppUtils;
+
 import cn.wps.moffice.client.AllowChangeCallBack;
 import cn.wps.moffice.demo.MyApplication;
 import cn.wps.moffice.demo.R;
@@ -179,6 +181,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
     private final static String PROTECT_PASSWORD = "123";
 
+    private boolean mIsbindService = false;
 
     @Override
     public void onCreate() {
@@ -190,7 +193,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
         findViewByID();
         createView();
-       // bindOfficeService();
+        // bindOfficeService();
     }
 
 
@@ -201,9 +204,20 @@ public class FloatServiceTest extends Service implements OnClickListener {
         FloatingFunc.show(this.getApplicationContext(), view);
         File file = new File(docPath);
         txt_fileName.setText(WINDOW_NOTE + "\n" + file.getName());
-        if (mService==null){
-            bindOfficeService();
-        }else{
+        if (mIsbindService && mService == null) {
+
+        }
+
+        if (mService == null) {
+            if (mIsbindService) { // 绑定了服务但是未连接
+                try {
+                    unbindService(connection);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            mIsbindService = bindOfficeService();
+        } else {
             ToastUtil.showShort(" 服务已经绑定");
         }
 
@@ -1623,49 +1637,73 @@ public class FloatServiceTest extends Service implements OnClickListener {
     }
 
     /**
+     * 处理为绑定死亡
+     */
+    private void doBindDeath(){
+        mService = null;
+        isBound = false;
+        mIsbindService =false;
+    }
+
+
+    private IBinder.DeathRecipient mDeathRecipient = new IBinder.DeathRecipient() {
+        @Override
+        public void binderDied() {                  // 当绑定的service异常断开连接后，会自动执行此方法
+            doBindDeath();
+
+            /*
+            if (mIMyAidlInterface != null){
+                mIMyAidlInterface.asBinder().unlinkToDeath(mDeathRecipient, 0);
+                bindService(new Intent("com.service.bind"),mMyServiceConnection,BIND_AUTO_CREATE);      //  重新绑定服务端的service
+            }
+            */
+        }
+    };
+
+    /**
      * connection of binding
      */
     private ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             mService = OfficeService.Stub.asInterface(service);
+            try { // 注册死亡代理
+                service.linkToDeath(mDeathRecipient, 0);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
             isBound = true;
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            mService = null;
-            isBound = false;
+            doBindDeath();
         }
     };
 
     // bind service
     private boolean bindOfficeService() {
         isChangedFlag = false;
-
         final Intent intent = new Intent(Define.OFFICE_SERVICE_ACTION);
         intent.putExtra("DisplayView", true);
         intent.setPackage(Define.PACKAGENAME_KING_PRO);
         boolean isbindService = false;
         try {
-            isbindService = MyApplication.getInstance().bindService(intent, connection, Service.BIND_AUTO_CREATE);
+            isbindService = bindService(intent, connection, Service.BIND_AUTO_CREATE);
         } catch (SecurityException e) {
             e.printStackTrace();
-        } finally { // 官方推荐https://stackoverflow.com/questions/14255338/bindservice-returns-false-but-unbindservice-needs-to-be-called
+        } finally {
             ToastUtil.showShort("isbindService=" + isbindService);
             Log.v("isbindService=", "" + isbindService);
+            /*
             if (!isbindService) {  // bind failed, maybe wps office is not installd yet.
                 try {
                     unbindService(connection);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-            }
+            }*/
         }
-
-        /*
-
-         */
         return isbindService;
     }
 
@@ -1826,7 +1864,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
         public void run() {
             // 打开文档
-            if (mService == null && !bindOfficeService()) {
+            if (mService == null ) {
                 Util.showToast(mContext, "操作失败，service可能为正常连接");
                 return;
             }
@@ -1857,7 +1895,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
         public void run() {
             // 打开文档
-            if (mService == null && !bindOfficeService()) {
+            if (mService == null ) {
                 Util.showToast(mContext, "操作失败，service可能为正常连接");
                 return;
             }
@@ -1881,7 +1919,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
         public void run() {
             // 打开文档
-            if (mService == null && !bindOfficeService()) {
+            if (mService == null ) {
                 Util.showToast(mContext, "操作失败，service可能为正常连接");
                 return;
             }
@@ -1905,7 +1943,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
 
         public void run() {
             // 打开文档
-            if (mService == null && !bindOfficeService()) {
+            if (mService == null ) {
                 Util.showToast(mContext, "操作失败，service可能为正常连接");
                 return;
             }

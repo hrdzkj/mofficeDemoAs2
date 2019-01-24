@@ -5,6 +5,7 @@ INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/Androi
 MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:20:1-40:12
 MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:17:1-31:12
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:15:1-20:12
+MERGED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:2:1-29:12
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:2:1-4:12
 MERGED from [android.arch.persistence.room:runtime:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d5e5a940d5aeeae79aeec04e370f8ef9/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:17:1-31:12
@@ -39,6 +40,8 @@ MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/t
 MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:32:5-38:19
 MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:25:5-29:19
+MERGED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:9:5-27:19
+MERGED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:9:5-27:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:25:5-29:19
@@ -195,6 +198,8 @@ MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/tr
 MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:21:5-23:54
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:18:5-43
 MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:18:5-43
+MERGED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:7:5-44
+MERGED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:7:5-44
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:3:3-40
 MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:3:3-40
 MERGED from [android.arch.persistence.room:runtime:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d5e5a940d5aeeae79aeec04e370f8ef9/AndroidManifest.xml:20:5-44
@@ -263,6 +268,36 @@ MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/cache
 		ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:28:13-35
 	android:name
 		ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:27:13-51
+activity#com.blankj.utilcode.util.PermissionUtils$PermissionActivity
+ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:10:9-15:75
+	android:multiprocess
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:13:13-40
+	android:windowSoftInputMode
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:15:13-72
+	android:configChanges
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:12:13-74
+	android:theme
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:14:13-55
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:11:13-87
+provider#com.blankj.utilcode.util.Utils$FileProvider4UtilCode
+ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:17:9-26:20
+	android:grantUriPermissions
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:21:13-47
+	android:authorities
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:19:13-69
+	android:multiprocess
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:22:13-40
+	android:exported
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:18:13-80
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:23:13-25:68
+	android:resource
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:25:17-65
+	android:name
+		ADDED from [com.blankj:utilcode:1.23.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/utilcode-1.23.1.aar/762a4d0224fc83f95d64827b4fdee029/AndroidManifest.xml:24:17-67
 meta-data#android.arch.lifecycle.VERSION
 ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:25:9-27:47
 	android:value

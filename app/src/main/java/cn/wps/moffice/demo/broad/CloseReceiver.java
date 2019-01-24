@@ -38,11 +38,12 @@ public class CloseReceiver extends BroadcastReceiver
         settingPreference.setSettingParam(Define.CLOSE_FILE, name);
         settingPreference.setSettingParam(Define.THIRD_PACKAGE, packageName);
         
-        
+        /*
         Util.showToast(context, "文件路径: " + name + "\n第三方包名: " + packageName
         		+ "\n文件查看的进度: " + ViewProgress + "\n上次查看的视图的缩放: " + ViewScale 
         		+ "\nX坐标: " + ViewScrollX + "\nY坐标: " + ViewScrollY);
-        
+        */
+
         //关闭service
         if (FloatServiceTest.isBound)
         	FloatServiceTest.stopService();

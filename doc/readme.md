@@ -1,8 +1,12 @@
-1. 定制版（企业版和专业版），有关闭的时候有toast;
+1. 定制版（企业版和专业版）
 专业版本的和企业版本是定制版本， <action android:name="cn.wps.moffice.service.OfficeService"/>对应的service才开放
 
 2. bindServer有时候不成功 。不清楚具体是什么原因。
 只是实现加密和不落地打开的基础，这个问题不稳定，不确定解决方案，后面的功能基本都不用考虑了。
+场景：1）启动第三方的白名单问题（wps不启动，则bindservice=false;）
+日志显示显示原因如下(不在白名单中)：
+01-24 10:17:01.607 3567-3578/? D/HwPFWLogger: AutoStartupDataMgr:isUnderControll third party not in whitelist: com.kingsoft.moffice_pro
+01-24 10:17:01.607 3567-3578/? D/HwPFWLogger: AutoStartupDataMgr:retrieveStartupSettings type 1 of com.kingsoft.moffice_pro is 0
 
 Found that If can't get the ResolveInfo of Service, it will false.
 

@@ -213,7 +213,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
         }
 
         if (mService == null) {
-            if (mIsbindService) { // 绑定了服务但是未连接
+            if (connection!=null) { // 绑定了服务但是未连接
                 try {
                     unbindService(connection);
                 } catch (Exception e) {

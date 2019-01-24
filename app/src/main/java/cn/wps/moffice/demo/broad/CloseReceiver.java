@@ -13,6 +13,8 @@ import cn.wps.moffice.demo.util.Util;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
+
 public class CloseReceiver extends BroadcastReceiver
 {
 	
@@ -22,6 +24,7 @@ public class CloseReceiver extends BroadcastReceiver
 	 */
     public void onReceive(Context context, Intent intent) 
     {
+        Log.v("CloseReceiver liuyi ","----------wps is close");
     	settingPreference = new SettingPreference(context);
     	
         String 	name = intent.getExtras().getString("CurrentPath");
@@ -45,7 +48,7 @@ public class CloseReceiver extends BroadcastReceiver
         */
 
         //关闭service
-        if (FloatServiceTest.isBound)
-        	FloatServiceTest.stopService();
+      //  if (FloatServiceTest.isBound)
+       // 	FloatServiceTest.stopService();
     }
 }

@@ -44,15 +44,17 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 	public int onOpenFile( String path, OfficeOutputStream output )
 			throws RemoteException 
 	{
-		Log.d("OfficeEventListener", "onOpenFile ：" + path);
+        Log.d("OfficeEventListener", "onOpenFile ：" + path);
         if (FileUtil.mTempStream!=null && output!=null){
-           byte[] tempByte= FileUtil.mTempStream.toByteArray();
+            byte[] tempByte= FileUtil.mTempStream.toByteArray();
             output.write(tempByte,0,tempByte.length);
             return 0;
+        }else{
+            return -1;
         }
-        return -1;
-        /*
-		if (!mIsValidPackage)
+
+      /*
+      if (!mIsValidPackage)
 			return -1;
 
 		SettingPreference settingPreference;
@@ -71,18 +73,20 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 	@Override
 	public int onSaveFile(OfficeInputStream input, String path)throws RemoteException 
 	{
-	    /*
 		Log.d("OfficeEventListener", "onSaveFile : " + path);
+
 		FileUtil.updateFile(input).
 				subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 				.subscribe(aBoolean -> {
                      ToastUtil.showShort("不落地保存结果:"+aBoolean.booleanValue());
+
 				}, throwable -> {
 					throwable.printStackTrace();
 					ToastUtil.showShort("上传文件时网络异常");
 				});
-		return 0;
-		*/
+
+		return 0; // 没有上传完就返回0，可能有bug
+		/*
 		SettingPreference settingPreference;
 		settingPreference 	= 	new SettingPreference(this.service.getApplicationContext());
 		boolean isEncrypt 	= settingPreference.getSettingParam(Define.ENCRYPT_FILE, false);
@@ -91,7 +95,7 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			return EncryptClass.encryptSaveFile(input, path);
 		else
 			return EncryptClass.normalSaveFile(input, path);
-
+        */
 
 	}
 
@@ -105,8 +109,8 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 	@Override
 	public boolean isActionAllowed(String path, ActionType type) throws RemoteException 
 	{
-		Log.d("OfficeEventListener", "isActionAllowed ： " + type.toString() + "  Path : " + path);
-		
+		// Log.d("OfficeEventListener", "isActionAllowed ： " + type.toString() + "  Path : " + path);
+		/*
 		SettingPreference settingPreference;
 		settingPreference 	= 	new SettingPreference(this.service.getApplicationContext());
 
@@ -127,7 +131,7 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 		boolean  isExist 	= 	path.startsWith(pathAT) || path.equals("");  //有部分事件传过来路径为"",
 		if (!typeAT && isExist)
 			return false;
-		
+		*/
 		return true;
 	}
 	

@@ -15,6 +15,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
 import cn.wps.moffice.client.OfficeInputStream;
@@ -34,17 +35,28 @@ public class FileUtil {
 
     public static ByteArrayOutputStream mTempStream = new ByteArrayOutputStream();
 
+    private static  OkHttpClient mOkHttpClient;
+    private static  OkHttpClient getOkhttpClient()
+    {
+        if (mOkHttpClient==null){
+            mOkHttpClient = new OkHttpClient.Builder().
+                    readTimeout(30, TimeUnit.SECONDS).build();
+        }
+        return mOkHttpClient;
+    }
+
     @SuppressLint("CheckResult")
     public static Observable<Boolean> downLoadFile(final String onlinePath) {
         return Observable.create(emitter -> {
-            OkHttpClient okHttpClient = new OkHttpClient();
-            Request request = new Request.Builder().get().url(onlinePath).build();
             closeStream();
             mTempStream = new ByteArrayOutputStream();
+
+            Request request = new Request.Builder().get().url(onlinePath).build();
             try {
-                Response response = okHttpClient.newCall(request).execute();
+                Response response = getOkhttpClient().newCall(request).execute();
                 if (!response.isSuccessful()) {
                     emitter.onNext(false);
+                    emitter.onComplete();
                     ToastUtil.showShort("连接异常");
                     return;
                 }
@@ -58,9 +70,12 @@ public class FileUtil {
                         mTempStream.write(bytes, 0, len);
                     }
                     emitter.onNext(true);
+                    emitter.onComplete();
                 } catch (IOException oue) {
+                    oue.printStackTrace();
                     closeStream();
                     emitter.onNext(false);
+                    emitter.onComplete();
                 } finally {
                     if (is != null) {
                         try {
@@ -74,6 +89,7 @@ public class FileUtil {
             } catch (IOException e) {
                 e.printStackTrace();
                 emitter.onNext(false);
+                emitter.onComplete();
             }
         });
     }
@@ -87,7 +103,7 @@ public class FileUtil {
                 //拼接参数
                 String PREFIX = "--";
                 String LINE_END = "\r\n";
-                String fileName = "20190124.doc";
+                String fileName = "382751e6395f56-496e-41f5-ae88-33edbe4e38ed.doc";//"20190124.doc";
                 String urlStr = "http://10.203.5.91:6060/QZHBJOffice/app/mobOffice/savedoc.html?userId=382751&fileName=attach/temp/382751/" + fileName + "&attachId=36304&po_moboffice_fn=" + fileName;
 
 
@@ -137,16 +153,20 @@ public class FileUtil {
                     }
                 }
                 emitter.onNext(true);
+                emitter.onComplete();
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
                 emitter.onNext(false);
+                emitter.onComplete();
             } catch (IOException e) {
                 e.printStackTrace();
                 emitter.onNext(false);
+                emitter.onComplete();
             } catch (RemoteException e) {
                 e.printStackTrace();
                 emitter.onNext(false);
+                emitter.onComplete();
             }
         });
 

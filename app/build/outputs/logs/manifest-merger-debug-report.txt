@@ -1,0 +1,271 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:2:1-103:12
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:2:1-103:12
+MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:20:1-40:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:17:1-31:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:15:1-20:12
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:2:1-4:12
+MERGED from [android.arch.persistence.room:runtime:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d5e5a940d5aeeae79aeec04e370f8ef9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:17:1-31:12
+MERGED from [android.arch.persistence:db-framework:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0.aar/7797395ab40c9ae0ebc9705230a35b59/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-1.1.0.aar/b869d49ae2ea916ae3e69126f7e9cd7a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3074027254fe79933f2a8bc90edb4119/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:2:1-103:12
+	package
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:4:5-34
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:6:22-75
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:7:22-78
+application
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:9:5-101:19
+MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:32:5-38:19
+MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:32:5-38:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:13:9-41
+	tools:ignore
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:15:9-48
+	android:icon
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:12:9-45
+	android:allowBackup
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:11:9-35
+	android:theme
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:14:9-40
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:10:9-38
+activity#cn.wps.moffice.demo.fileManager.ListFileActivity
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:16:10-23:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:18:13-45
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:17:13-76
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:21:27-74
+activity#cn.wps.moffice.demo.test.AutoTest
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:30:9-33:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:32:13-45
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:31:13-61
+activity#cn.wps.moffice.demo.menu.ListViewParamActivity
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:35:9-38:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:37:13-40
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:36:13-74
+activity#cn.wps.moffice.demo.menu.OpenWayParamActivity
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:40:9-43:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:42:13-40
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:41:13-73
+activity#cn.wps.moffice.demo.menu.AIDLParamActivity
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:45:9-48:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:47:13-40
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:46:13-70
+activity#cn.wps.moffice.demo.menu.ATEditParamActivity
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:50:9-53:20
+	android:label
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:52:13-40
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:51:13-72
+service#cn.wps.moffice.demo.agent.AgentMessageService
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:9-60:19
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:18-78
+intent-filter#action:name:cn.wps.moffice.agent.OfficeServiceAgent
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:56:13-59:29
+action#cn.wps.moffice.agent.OfficeServiceAgent
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:57:17-58:26
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:57:25-79
+service#cn.wps.moffice.demo.client.MOfficeClientService
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:9-65:19
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:18-80
+intent-filter#action:name:cn.wps.moffice.client.OfficeServiceClient
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:62:13-64:29
+action#cn.wps.moffice.client.OfficeServiceClient
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:63:17-84
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:63:25-81
+service#cn.wps.moffice.demo.floatingview.service.FloatServiceTest
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:67:10-71:19
+	android:enabled
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:69:13-35
+	android:exported
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:70:13-36
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:68:13-85
+service#cn.wps.moffice.demo.floatingview.service.FloatingServiceHideView
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:73:9-77:19
+	android:enabled
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:75:13-35
+	android:exported
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:76:13-36
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:74:13-92
+receiver#cn.wps.moffice.demo.broad.CloseReceiver
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:79:9-84:20
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:79:19-73
+intent-filter#action:name:cn.wps.moffice.broadcast.AfterClosed
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:80:13-83:29
+action#cn.wps.moffice.broadcast.AfterClosed
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:82:16-78
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:82:24-75
+receiver#cn.wps.moffice.demo.broad.SaveReceiver
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:85:9-90:20
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:85:19-72
+intent-filter#action:name:cn.wps.moffice.broadcast.AfterSaved
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:86:13-89:29
+action#cn.wps.moffice.broadcast.AfterSaved
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:88:17-78
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:88:25-75
+receiver#cn.wps.moffice.demo.broad.BackKeyReceiver
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:91:10-95:20
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:91:20-76
+intent-filter#action:name:com.kingsoft.back.key.down
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:92:13-94:29
+action#com.kingsoft.back.key.down
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:93:17-69
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:93:25-66
+receiver#cn.wps.moffice.demo.broad.HomeKeyReceiver
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:96:9-100:20
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:96:19-75
+intent-filter#action:name:com.kingsoft.home.key.down
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:97:13-99:29
+action#com.kingsoft.home.key.down
+ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:98:17-69
+	android:name
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:98:25-66
+uses-sdk
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:25:5-27:41
+MERGED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:21:5-23:54
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/rxandroid-2.1.0.aar/e282a83d5136e3acb955c813ed196140/AndroidManifest.xml:18:5-43
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:3:3-40
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/mac/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/e506f436d3956aeece6f5dc66d4a57d8/AndroidManifest.xml:3:3-40
+MERGED from [android.arch.persistence.room:runtime:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d5e5a940d5aeeae79aeec04e370f8ef9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/d5e5a940d5aeeae79aeec04e370f8ef9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.persistence:db-framework:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0.aar/7797395ab40c9ae0ebc9705230a35b59/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-framework-1.1.0.aar/7797395ab40c9ae0ebc9705230a35b59/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-1.1.0.aar/b869d49ae2ea916ae3e69126f7e9cd7a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/db-1.1.0.aar/b869d49ae2ea916ae3e69126f7e9cd7a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3074027254fe79933f2a8bc90edb4119/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3074027254fe79933f2a8bc90edb4119/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:29:5-67
+	android:name
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:29:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:30:5-76
+	android:name
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:30:22-73
+provider#com.amitshekhar.DebugDBInitProvider
+ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:33:9-37:40
+	android:enabled
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:36:13-35
+	android:authorities
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:35:13-71
+	android:exported
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:37:13-37
+	android:name
+		ADDED from [com.amitshekhar.android:debug-db:1.0.4] /Users/mac/.gradle/caches/transforms-1/files-1.1/debug-db-1.0.4.aar/59ae7e04f591b151c7744ceb822471b6/AndroidManifest.xml:34:13-63
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/d398905ff19849a1d06d269862f954a7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/f74da5395f3db807daf016334790bdf9/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/dd99910a550fe19d4a3c3e5b0933291c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/e8e105225cc046351ce7cb0d4f0bdbf7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/724c7f0bf1b0eb15670d109500ec03d5/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:support-v4:26.1.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/bd44e4f64508baceecc83fe79e4b8658/AndroidManifest.xml:27:13-51
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/mac/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/c535ae234b80832ed1a63a9219a3bc1b/AndroidManifest.xml:26:13-58

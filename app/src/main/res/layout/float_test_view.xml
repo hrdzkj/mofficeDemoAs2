@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00FF0000"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:id="@+id/first1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00FF0000"
+        android:gravity="center_vertical" >
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="fill_parent"
+            android:layout_height="60dip"
+            android:textSize="8sp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+			android:focusable="true"
+			android:background="#FFFF0000"
+            android:textColor="#FFFFFF" />
+        
+        <Button
+            android:id="@+id/btnHideAll"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="隐藏所有"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" />
+   </LinearLayout>
+        
+   <ScrollView 
+    android:id="@+id/allbtngroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+        
+        <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical" >
+
+            <Button
+            android:id="@+id/btnCloseWindow"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="关闭窗口"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+
+           <!-- 以下是document个的接口按钮，  /////////////////////////////////////////////////////////////////////-->
+        	<Button
+            android:id="@+id/btnNewDocument"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="新建文档"
+            android:textColor="#0000FF"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        	
+           <Button
+            android:id="@+id/btnOpenFile"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="打开文档"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+           
+            <Button
+            android:id="@+id/btnCloseFile"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="关闭文档"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+                 
+            <Button
+            android:id="@+id/btnGetPath"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="文档路径"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetPageCount"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="文档页数"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+        
+        	<Button
+       	    android:id="@+id/btnSave"
+       	    android:layout_width="160dip"
+       	    android:layout_height="wrap_content"
+       	    android:gravity="center"
+       	    android:padding="1dip"
+       	    android:text="保存文档"
+       	    android:textSize="13sp"
+            android:textColor="#0000FF"
+       	    android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnSaveAs"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="另存文档"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnHiddenToolBar"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="隐藏工具栏"
+            android:textColor="#0000FF"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnHiddenMenuBar"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="隐藏菜单栏"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnIsModified"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="是否修改"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnHandWriteComment"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="打开手绘"
+            android:textColor="#0000FF"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" />
+              
+            <Button
+            android:id="@+id/btnChangeReviseMode"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="进入修订模式"
+            android:textColor="#0000FF"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnAcceptAllRevision"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="接受所有修订"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="撤销"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+              
+            <Button
+            android:id="@+id/btnRedo"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="还原"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnClearAllComments"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="删除所有批注"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+               
+            <Button
+            android:id="@+id/btnGetCurrentPageNum"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="当前页页码"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+                 
+            <Button
+            android:id="@+id/btnSaveCurrentPageToImage"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="截图当前页"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+           	<Button
+            android:id="@+id/btnSaveAllPageToImage"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="截图所有页"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetLength"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="文档长度"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetScrollY"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="已划过Y长度"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetScrollX"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="已划过X长度"
+            android:textSize="13sp"
+            android:textColor="#0000FF"
+            android:padding="1dip"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnAddDocumentVariable"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加文档属性"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetDocumentVariable"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="查找文档属性"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+           <Button
+            android:id="@+id/btnReadOnlyProtect"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="只读保护"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnCommentProtect"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="批注保护"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+              
+            <Button
+            android:id="@+id/btnTrackedProtect"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="修订保护"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnUnProtect"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="取消保护"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+             
+            <Button
+            android:id="@+id/btnIsProtectOn"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="是否保护"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <Button
+            android:id="@+id/btnGetProtectionType"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="保护类型"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textColor="#0000FF"
+            android:textStyle="bold" />
+            
+            <!-- 以下是selection个的接口按钮，  /////////////////////////////////////////////////////////////////////-->
+            
+            <Button
+            android:id="@+id/btnCopy"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="复制"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+               
+            <Button
+            android:id="@+id/btnCut"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="剪切"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+              
+            <Button
+            android:id="@+id/btnPaste"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="粘贴"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+                 
+            <Button
+            android:id="@+id/btnTypeText"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="插入文字"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+            
+            <Button
+            android:id="@+id/btnGetText"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="获取选区文字"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+             
+            <Button
+            android:id="@+id/btnInsertParagraph"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="插入段"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+            
+            <Button
+            android:id="@+id/btnGetLeft"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选区左边界坐标"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+               
+            <Button
+            android:id="@+id/btnGetTop"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选区上边界坐标"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+               
+            <Button
+            android:id="@+id/btnGetStart"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选区开始位置"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+               
+            <Button
+            android:id="@+id/btnGetEnd"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="选区结束位置"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+            
+            <Button
+            android:id="@+id/btnSetSelection"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="设置选区位置"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+             
+            <Button
+            android:id="@+id/btngetFont"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="字体信息"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#5F0000"/>
+            
+             <!-- 嵌入式图片 ////////////////////////////////////////////////////////////////////////-->
+            <Button
+            android:id="@+id/btnAddInlinePicture"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加嵌入图"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#9F9F00"/>
+             
+            <!--  浮动对象属性 /////////////////////////////////////////////////////////////////////-->
+            <Button
+            android:id="@+id/btnAddPicture"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加浮动图"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+            <Button
+            android:id="@+id/btnAddTextBox"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加文本框"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+            <Button
+            android:id="@+id/btnAddNoneTextBox"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加空文本框"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+             
+            <Button
+            android:id="@+id/btnToggleInkFinger"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="使用手指"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                
+            <Button
+            android:id="@+id/btnToggleToPen"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="使用笔"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                   
+            <Button
+            android:id="@+id/btnToggleToHighLightPen"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="荧光笔"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                      
+            <Button
+            android:id="@+id/btnToggleToEraser"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="橡皮擦"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+             
+            <Button
+            android:id="@+id/btnSetInkColor"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="设置墨迹颜色"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                   
+             <Button
+            android:id="@+id/btnGetInkColor"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="获取墨迹颜色"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                               
+            <Button
+            android:id="@+id/btnGetInkPenThick"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="获取笔的粗细"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+                                  
+            <Button
+            android:id="@+id/btnGetInkHighLightThick"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="荧光笔的粗细"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+              
+            <Button
+            android:id="@+id/btnSetInkThick"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="设置笔的粗细"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+            <!--  设置selection的字体属性 /////////////////////////////////////////////////////////////////////-->
+            <Button
+            android:id="@+id/btnRemoveStrikeThrough"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="去掉选区删除线"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+            <Button
+            android:id="@+id/btnSetStrikeThrough"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="添加删除线"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF00FF"/>
+            
+            <Button
+            android:id="@+id/btnPrePage"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="pdf上一页"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF88AA"/>
+             
+            <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="pdf下一页"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FF88AA"/>
+            
+            <Button
+            android:id="@+id/btnGetShapeLeft"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="对象X坐标"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+             
+            <Button
+            android:id="@+id/btnGetShapeTop"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="对象Y坐标"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+              
+            <Button
+            android:id="@+id/btnGetShapeHeight"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="对象高度"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+                
+            <Button
+            android:id="@+id/btnGetShapeWidth"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="对象宽度"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+            
+            <Button
+            android:id="@+id/btnGetTextBoxLineColor"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="文本框边框颜色"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+              
+            <Button
+            android:id="@+id/btnGetTextBoxFLine"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="文本框边框透明"
+            android:textSize="13sp"
+            android:padding="1dip"
+            android:textStyle="bold" 
+            android:textColor="#FFBB66"/>
+    </LinearLayout>
+
+    </ScrollView>
+    
+</LinearLayout>

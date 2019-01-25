@@ -45,6 +45,7 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			throws RemoteException 
 	{
         Log.d("OfficeEventListener", "onOpenFile ：" + path);
+        /*
         if (FileUtil.mTempStream!=null && output!=null){
             byte[] tempByte= FileUtil.mTempStream.toByteArray();
             output.write(tempByte,0,tempByte.length);
@@ -52,8 +53,8 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
         }else{
             return -1;
         }
+      */
 
-      /*
       if (!mIsValidPackage)
 			return -1;
 
@@ -65,7 +66,7 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			return EncryptClass.encryptOpenFile(path, output);
 		else
 			return EncryptClass.normalOpenFile(path, output);
-			*/
+
 
 	}
 	
@@ -75,6 +76,9 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 	{
 		Log.d("OfficeEventListener", "onSaveFile : " + path);
 
+		/*
+		// 没有上传完就返回0，可能有bug  正确的逻辑应该：先保存成流，响应了wsp后面再另外开线程进行上传。
+		   现在主要是 OfficeEventListener触发问题。
 		FileUtil.updateFile(input).
 				subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
 				.subscribe(aBoolean -> {
@@ -84,8 +88,8 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 					throwable.printStackTrace();
 					ToastUtil.showShort("上传文件时网络异常");
 				});
-
-		return 0; // 没有上传完就返回0，可能有bug
+				*/
+        return FileUtil.updateFile2(input);
 		/*
 		SettingPreference settingPreference;
 		settingPreference 	= 	new SettingPreference(this.service.getApplicationContext());

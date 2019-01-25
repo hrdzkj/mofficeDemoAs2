@@ -55,13 +55,17 @@
             android:label="settingList" >
         </activity>
 
-        <service android:name="cn.wps.moffice.demo.agent.AgentMessageService" >
+        <service
+            android:name="cn.wps.moffice.demo.agent.AgentMessageService"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="cn.wps.moffice.agent.OfficeServiceAgent" >
                 </action>
             </intent-filter>
         </service>
-        <service android:name="cn.wps.moffice.demo.client.MOfficeClientService" >
+        <service
+            android:name="cn.wps.moffice.demo.client.MOfficeClientService"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="cn.wps.moffice.client.OfficeServiceClient" />
             </intent-filter>

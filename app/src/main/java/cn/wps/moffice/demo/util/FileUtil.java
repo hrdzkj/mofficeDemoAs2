@@ -35,10 +35,10 @@ public class FileUtil {
 
     public static ByteArrayOutputStream mTempStream = new ByteArrayOutputStream();
 
-    private static  OkHttpClient mOkHttpClient;
-    private static  OkHttpClient getOkhttpClient()
-    {
-        if (mOkHttpClient==null){
+    private static OkHttpClient mOkHttpClient;
+
+    private static OkHttpClient getOkhttpClient() {
+        if (mOkHttpClient == null) {
             mOkHttpClient = new OkHttpClient.Builder().
                     readTimeout(30, TimeUnit.SECONDS).build();
         }
@@ -172,6 +172,76 @@ public class FileUtil {
 
 
     }
+
+    @SuppressLint("CheckResult")
+    public static int updateFile2(OfficeInputStream input) {
+        try {
+            String BOUNDARY = UUID.randomUUID().toString();  //随机生成边界
+            //拼接参数
+            String PREFIX = "--";
+            String LINE_END = "\r\n";
+            String fileName = "382751e6395f56-496e-41f5-ae88-33edbe4e38ed.doc";//"20190124.doc";
+            String urlStr = "http://10.203.5.91:6060/QZHBJOffice/app/mobOffice/savedoc.html?userId=382751&fileName=attach/temp/382751/" + fileName + "&attachId=36304&po_moboffice_fn=" + fileName;
+
+
+            URL url = new URL(urlStr);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setConnectTimeout(30 * 1000); //30秒连接超时
+            connection.setReadTimeout(30 * 1000);   //30秒读取超时
+            connection.setDoInput(true);  //允许文件输入流
+            connection.setDoOutput(true); //允许文件输出流
+            connection.setUseCaches(false);  //不允许使用缓存
+            connection.setRequestMethod("POST");  //请求方式为POST
+            connection.setRequestProperty("Connection", "keep-alive"); //保持连接
+            connection.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + BOUNDARY); //特别注意：Content-Type必须为multipart/form-data
+
+            OutputStream outputSteam = connection.getOutputStream();
+            DataOutputStream dos = new DataOutputStream(outputSteam);
+            StringBuffer sb = new StringBuffer();
+            sb.append(PREFIX);
+            sb.append(BOUNDARY);
+            sb.append(LINE_END);
+
+            sb.append("Content-Disposition: form-data; name=\"file\"; filename=\"" + fileName + "\"" + LINE_END);
+            sb.append("Content-Type: application/octet-stream" + LINE_END + LINE_END);
+            dos.write(sb.toString().getBytes());
+
+            //读取文件
+            byte[] bytes = new byte[1024];
+            int[] ints = new int[1024];
+            int len = 0;
+
+            while ((len = input.read(bytes, ints)) != -1) {
+                dos.write(bytes, 0, len);
+            }
+            dos.write(LINE_END.getBytes());
+            byte[] end_data = (PREFIX + BOUNDARY + PREFIX + LINE_END).getBytes();
+            dos.write(end_data);
+            dos.flush();
+
+            //获取返回码，根据返回码做相应处理
+            int res = connection.getResponseCode();
+            if (res == 200) {
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+                StringBuilder result = new StringBuilder();
+                String line;
+                while ((line = bufferedReader.readLine()) != null) {
+                    result.append(line).append("\n");
+                }
+            }
+            return 0;
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+        return -1;
+    }
+
 
     private static void closeStream() {
         if (mTempStream != null) {

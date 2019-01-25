@@ -53,6 +53,7 @@ import cn.wps.moffice.service.pdf.PDFReader;
 import cn.wps.moffice.service.presentation.Presentation;
 import cn.wps.moffice.service.spreadsheet.Workbook;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
@@ -213,6 +214,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
         }
 
         if (mService == null) {
+            /*
             if (connection!=null) { // 绑定了服务但是未连接
                 try {
                     unbindService(connection);
@@ -220,6 +222,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
                     e.printStackTrace();
                 }
             }
+            */
             mIsbindService = bindOfficeService();
         } else {
             ToastUtil.showShort(" 服务已经绑定");
@@ -405,6 +408,13 @@ public class FloatServiceTest extends Service implements OnClickListener {
         });
     }
 
+    protected Disposable mDisposable;
+    protected void unsubscribe() {
+        if (mDisposable != null && !mDisposable.isDisposed()) {
+            mDisposable.dispose();
+        }
+    }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -426,7 +436,8 @@ public class FloatServiceTest extends Service implements OnClickListener {
                     openWorkBook();
                 } else {
                     //openDocument();
-                    FileUtil.downLoadFile(FileUtil.testDowloadFile)
+                    unsubscribe();
+                    mDisposable= FileUtil.downLoadFile(FileUtil.testDowloadFile)
                             .subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread())
                             .subscribe(aBoolean -> {
                                 if (aBoolean.booleanValue()) {
@@ -1638,6 +1649,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
     @Override
     public void onDestroy() {
         Log.d("FloatingService", "onDestroy");
+        unsubscribe();
 
         FloatingFunc.close(this.getApplicationContext());
         if (connection != null) unbindService(connection);
@@ -1890,7 +1902,10 @@ public class FloatServiceTest extends Service implements OnClickListener {
             try {
                 Intent intent = Util.getOpenIntent(mContext, this.path, true);
                 //intent.getExtras();
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra(Define.USER_NAME, "LiuYi");
+               // intent.putExtra(Define.IS_CLEAR_TRACE,true);
+                intent.putExtra(Define.THIRD_PACKAGE, getPackageName());
                 if (OPEN_DOCUMENT == flag) {
                     mDoc = mService.openDocument(path, "", intent);
                 } else if (NEW_DOCUMENT == flag) {

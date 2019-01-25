@@ -28,6 +28,7 @@ import android.widget.Toast;
 
 import com.amitshekhar.DebugDB;
 
+import cn.wps.moffice.demo.agent.AgentMessageService;
 import cn.wps.moffice.demo.client.MOfficeClientService;
 import cn.wps.moffice.demo.floatingview.service.FloatServiceTest;
 import cn.wps.moffice.demo.floatingview.service.FloatingServiceHideView;
@@ -70,6 +71,8 @@ public class ListFileActivity extends ListActivity {
         //启动service
         Intent intent = new Intent(this, MOfficeClientService.class);
         startService(intent);
+
+        startService(new Intent(this, AgentMessageService.class));
 
         //实现将第三方包名写入文件，以便wps读取
         settingPreference = new SettingPreference(this);

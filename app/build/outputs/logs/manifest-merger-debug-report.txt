@@ -114,8 +114,10 @@ ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidMa
 		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:51:13-72
 service#cn.wps.moffice.demo.agent.AgentMessageService
 ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:9-60:19
+	android:exported
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:18-41
 	android:name
-		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:18-78
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:55:42-102
 intent-filter#action:name:cn.wps.moffice.agent.OfficeServiceAgent
 ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:56:13-59:29
 action#cn.wps.moffice.agent.OfficeServiceAgent
@@ -124,8 +126,10 @@ ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidMa
 		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:57:25-79
 service#cn.wps.moffice.demo.client.MOfficeClientService
 ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:9-65:19
+	android:exported
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:18-41
 	android:name
-		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:18-80
+		ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:61:43-105
 intent-filter#action:name:cn.wps.moffice.client.OfficeServiceClient
 ADDED from /Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/AndroidManifest.xml:62:13-64:29
 action#cn.wps.moffice.client.OfficeServiceClient

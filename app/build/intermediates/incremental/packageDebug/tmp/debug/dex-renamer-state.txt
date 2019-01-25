@@ -1,4 +1,4 @@
-#Thu Jan 24 17:49:56 CST 2019
+#Fri Jan 25 09:52:00 CST 2019
 base.0=/Users/mac/Documents/githubCode/mofficeDemoAs2/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex

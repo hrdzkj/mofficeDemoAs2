@@ -7,16 +7,14 @@ import java.io.ByteArrayOutputStream;
  */
 public class UploadFileThread extends Thread  {
 
-   private ByteArrayOutputStream mOutputStream;
+   private ByteArrayOutputStream mOutputStream=new ByteArrayOutputStream();
     public UploadFileThread(ByteArrayOutputStream outputStream)
     {
         super();
-        mOutputStream = new ByteArrayOutputStream();
         if (outputStream!=null){
             byte[] bytes =outputStream.toByteArray();
-            outputStream.write(bytes,0,bytes.length);
+            mOutputStream.write(bytes,0,bytes.length);
         }
-
     }
 
     @Override
@@ -26,8 +24,9 @@ public class UploadFileThread extends Thread  {
     }
 
     public void uploadFile() {
-        // FileUtil.updateFile2(mOutputStream);
+
         FileUtil.saveFile(mOutputStream,"saveFile.doc");
+
     }
 
 

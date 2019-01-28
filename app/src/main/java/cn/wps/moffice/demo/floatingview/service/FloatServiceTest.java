@@ -1714,6 +1714,7 @@ public class FloatServiceTest extends Service implements OnClickListener {
     // bind service
     private boolean bindOfficeService() {
         isChangedFlag = false;
+
         final Intent intent = new Intent(Define.OFFICE_SERVICE_ACTION);
         intent.putExtra("DisplayView", true);
         intent.setPackage(Define.PACKAGENAME_KING_PRO);
@@ -1725,14 +1726,6 @@ public class FloatServiceTest extends Service implements OnClickListener {
         } finally {
             ToastUtil.showShort("isbindService=" + isbindService);
             Log.v("isbindService=", "" + isbindService);
-            /*
-            if (!isbindService) {  // bind failed, maybe wps office is not installd yet.
-                try {
-                    unbindService(connection);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }*/
         }
         return isbindService;
     }

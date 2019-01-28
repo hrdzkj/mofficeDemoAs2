@@ -267,8 +267,9 @@ public class FileUtil {
             // 获取文件的输出流对象
             FileOutputStream outStream = new FileOutputStream(file);
             // 获取字符串对象的byte数组并写入文件流
-
-            outStream.write(out.toByteArray());
+            byte[]  bytes=out.toByteArray();
+            outStream.write(bytes);
+            outStream.flush();
             // 最后关闭文件输出流
             outStream.close();
         } catch (Exception e) {

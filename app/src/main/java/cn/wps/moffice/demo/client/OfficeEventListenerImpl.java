@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -72,7 +73,8 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 */
 
 	}
-	
+
+	//input.read(bytes, ints) 返回值=0表示远程通信成功，ints[0]表示读取数据长度
 	@SuppressLint("CheckResult")
 	@Override
 	public int onSaveFile(OfficeInputStream input, String path) {
@@ -82,12 +84,26 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
 			//读取文件
 			byte[] bytes = new byte[1024];
 			int[] ints = new int[1024];
-			int len;
-			while ((len = input.read(bytes, ints)) != -1) {
-				byteArrayOutputStream.write(bytes, 0, len);
+		    boolean isReadFinish=false;
+
+			Arrays.fill(bytes,(byte)0);
+			Arrays.fill(ints,0);
+			while (input.read(bytes, ints)==0) { // 远程通信成功
+				if (ints[0]>0) { // 尚未读完
+					byteArrayOutputStream.write(bytes, 0, ints[0]);
+				}
+
+				if (ints[0]<=0){ // 读取完
+					isReadFinish=true;
+					new UploadFileThread(byteArrayOutputStream).start();
+					break;
+				}
+
+				Arrays.fill(bytes,(byte)0);
+				Arrays.fill(ints,0);
 			}
-			new UploadFileThread(byteArrayOutputStream).start();
-			return 0;
+
+			return isReadFinish?0:-1;
 		}catch (Exception e){
 			e.printStackTrace();
 			return -1;
@@ -272,4 +288,6 @@ public class OfficeEventListenerImpl extends OfficeEventListener.Stub
         }
 		return 0;
 	}
+
+
 }

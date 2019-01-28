@@ -6,7 +6,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="---" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -15,59 +16,20 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="668521b1-e7d0-4b26-bc1c-3aafd70c2e66" name="Default" comment="找到bindservice的bug">
-      <change afterPath="$PROJECT_DIR$/doc/zys/WPS_Android9.2.11.chm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/zys/第三方操作WPS文档.doc" afterDir="false" />
+    <list default="true" id="668521b1-e7d0-4b26-bc1c-3aafd70c2e66" name="Default" comment="整理了加密与不落地打开存在的bug">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/UploadFileThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_db_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_db_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_db_framework_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_db_framework_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_room_runtime_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_persistence_room_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amitshekhar_android_debug_db_1_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_amitshekhar_android_debug_db_1_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_26_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_reactivex_rxjava2_rxandroid_2_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_zetetic_android_database_sqlcipher_3_5_7_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_zetetic_android_database_sqlcipher_3_5_7_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/9PVWJerN7clvXRpsMSNsmHvg9SY=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/9PVWJerN7clvXRpsMSNsmHvg9SY=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/client/OfficeEventListenerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/client/OfficeEventListenerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/fileManager/ListFileActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadDocThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadDocThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadPDFDocThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadPDFDocThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadPresentationThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadPresentationThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadWorkBookThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest$LoadWorkBookThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex" afterDir="false" />
@@ -76,11 +38,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mofficeDemoAs2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mofficeDemoAs2.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,48 +72,50 @@
     <session id="-1123719924">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.141" value="1" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.84" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="11" />
+          <entry key="class" value="15" />
           <entry key="gradle" value="9" />
-          <entry key="java" value="94" />
-          <entry key="md" value="5" />
-          <entry key="xml" value="7" />
+          <entry key="java" value="109" />
+          <entry key="md" value="7" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="11" />
+          <entry key="CLASS" value="15" />
           <entry key="Groovy" value="9" />
-          <entry key="JAVA" value="94" />
-          <entry key="Markdown" value="5" />
-          <entry key="XML" value="7" />
+          <entry key="JAVA" value="109" />
+          <entry key="Markdown" value="7" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
           <entry key="gradle" value="21" />
-          <entry key="java" value="3215" />
+          <entry key="java" value="3627" />
           <entry key="md" value="885" />
-          <entry key="txt" value="56" />
+          <entry key="txt" value="78" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="21" />
-          <entry key="JAVA" value="3215" />
+          <entry key="JAVA" value="3627" />
           <entry key="Markdown" value="885" />
-          <entry key="PLAIN_TEXT" value="64" />
+          <entry key="PLAIN_TEXT" value="86" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
@@ -169,21 +129,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+            <state relative-caret-position="284">
+              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
               <folding>
-                <element signature="e#2921#2922#0" expanded="true" />
-                <element signature="e#2953#2954#0" expanded="true" />
+                <element signature="e#3043#3044#0" expanded="true" />
+                <element signature="e#3075#3076#0" expanded="true" />
+                <element signature="e#3118#3119#0" expanded="true" />
+                <element signature="e#3149#3150#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/MOfficeClientService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -191,17 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/agent/OfficeServiceAgentImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
+            <state relative-caret-position="525">
               <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/agent/OfficeServiceAgent.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -209,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="1903" column="34" selection-start-line="1903" selection-start-column="34" selection-end-line="1903" selection-end-column="34" />
+            <state relative-caret-position="468">
+              <caret line="825" column="13" selection-start-line="825" selection-start-column="13" selection-end-line="825" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#52474#52475#0" expanded="true" />
@@ -223,32 +167,7 @@
                 <element signature="e#56085#56086#0" expanded="true" />
                 <element signature="e#56155#56156#0" expanded="true" />
                 <element signature="e#56185#56186#0" expanded="true" />
-                <element signature="e#64655#64656#0" expanded="true" />
-                <element signature="e#64696#64697#0" expanded="true" />
-                <element signature="e#64742#64743#0" expanded="true" />
-                <element signature="e#64786#64787#0" expanded="true" />
-                <element signature="e#64828#64829#0" expanded="true" />
-                <element signature="e#64868#64869#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="54" column="92" selection-start-line="54" selection-start-column="92" selection-end-line="54" selection-end-column="92" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-manifest" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/doc/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -256,8 +175,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="565">
+              <caret line="277" column="5" selection-start-line="277" selection-start-column="5" selection-end-line="277" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -266,10 +185,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+            <state relative-caret-position="474">
+              <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/client/OfficeEventListener.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/client/OfficeInputStream.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="44" />
+              <folding>
+                <element signature="method#asInterface#0;class#Stub#0;class#OfficeInputStream#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/UploadFileThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -2482,19 +2441,20 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/broad/CloseReceiver.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java" />
         <option value="$PROJECT_DIR$/doc/readme.md" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/UploadFileThread.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="49" />
-    <option name="width" value="1846" />
+    <option name="x" value="103" />
+    <option name="y" value="33" />
+    <option name="width" value="1838" />
     <option name="height" value="976" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -2514,6 +2474,19 @@
               <item name="mofficeDemoAs2" type="b2602c69:ProjectViewProjectNode" />
               <item name="mofficeDemoAs2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="mofficeDemoAs2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mofficeDemoAs2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mofficeDemoAs2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mofficeDemoAs2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mofficeDemoAs2" type="b2602c69:ProjectViewProjectNode" />
@@ -2542,6 +2515,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2578,7 +2552,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -2587,7 +2560,7 @@
     <property name="DEBUGGABLE_PROCESS" value="cn.wps.moffice.demo" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="fi&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java&#10;flo&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java&#10;file&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java&#10;fil&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;readm&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/doc/readme.md&#10;normalOpenFile&#9;PSI&#9;JAVA://cn.wps.moffice.demo.util.EncryptClass#normalOpenFile&#10;list&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;de&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/Define.java&#10;flot&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java&#10;f&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;auto&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/test/AutoTest.java&#10;OfficeServiceAgent&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/agent/OfficeServiceAgentImpl.java&#10;OfficeServiceClient&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/client/OfficeServiceClientImpl.java&#10;floa&#9;PSI&#9;JAVA://cn.wps.moffice.demo.floatingview.service.FloatServiceTest&#10;List&#9;PSI&#9;JAVA://cn.wps.moffice.demo.fileManager.ListFileActivity&#10;FloatService&#9;PSI&#9;JAVA://cn.wps.moffice.demo.floatingview.service.FloatServiceTest" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;fi&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java&#10;flo&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java&#10;file&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java&#10;fil&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;readm&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/doc/readme.md&#10;normalOpenFile&#9;PSI&#9;JAVA://cn.wps.moffice.demo.util.EncryptClass#normalOpenFile&#10;list&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;de&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/util/Define.java&#10;flot&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java&#10;f&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java&#10;auto&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/test/AutoTest.java&#10;OfficeServiceAgent&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/agent/OfficeServiceAgentImpl.java&#10;OfficeServiceClient&#9;FILE&#9;file:///Users/mac/Documents/githubCode/mofficeDemoAs2/app/src/main/java/cn/wps/moffice/demo/client/OfficeServiceClientImpl.java&#10;floa&#9;PSI&#9;JAVA://cn.wps.moffice.demo.floatingview.service.FloatServiceTest&#10;List&#9;PSI&#9;JAVA://cn.wps.moffice.demo.fileManager.ListFileActivity&#10;FloatService&#9;PSI&#9;JAVA://cn.wps.moffice.demo.floatingview.service.FloatServiceTest" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
@@ -2759,7 +2732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548323606550</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="整理了加密与不落地打开存在的bug">
+      <created>1548381280868</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1548381280868</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2772,11 +2752,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="49" width="1886" height="976" extended-state="0" />
+    <frame x="103" y="33" width="1838" height="976" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8744257" visible="true" weight="0.21583514" />
-      <window_info id="Structure" order="1" sideWeight="0.12557428" side_tool="true" visible="true" weight="0.21583514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8703939" visible="true" weight="0.21547884" />
+      <window_info id="Structure" order="1" sideWeight="0.1296061" side_tool="true" visible="true" weight="0.21547884" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -2786,14 +2766,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.46659598" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40418118" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.085946575" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3202545" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.2682927" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.37514517" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32979852" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Logcat" order="10" visible="true" weight="0.24157956" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.2950058" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.41301775" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -2801,7 +2781,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Preview" order="4" sideWeight="0.8621212" weight="0.4017709" />
-      <window_info anchor="right" id="Device File Explorer" order="5" sideWeight="0.13787879" side_tool="true" visible="true" weight="0.14099783" />
+      <window_info anchor="right" id="Device File Explorer" order="5" sideWeight="0.13787879" side_tool="true" visible="true" weight="0.24053451" />
       <window_info anchor="right" id="Api Debugger" order="6" sideWeight="0.95840555" weight="0.32998326" />
       <window_info anchor="right" id="Gradle" order="7" weight="0.20044668" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -2816,45 +2796,34 @@
     <MESSAGE value="找到bindservice的bug" />
     <MESSAGE value="完成不落地打开代码编写" />
     <MESSAGE value="实现不落地打开正常" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现不落地打开正常" />
+    <MESSAGE value="整理了加密与不落地打开存在的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="整理了加密与不落地打开存在的bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java</url>
-          <line>90</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java</url>
+          <line>88</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatingServiceHideView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/broad/BackKeyReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.0/ba88ed6468f28df009c013256be77ad72d313965/rxjava-2.2.0-sources.jar!/io/reactivex/ObservableOnSubscribe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/LiuYiAidlBaseActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/test/AutoTest.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2953,10 +2922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="600" column="22" selection-start-line="600" selection-start-column="22" selection-end-line="600" selection-end-column="22" />
-          <folding>
-            <element signature="e#28819#28820#0" expanded="true" />
-            <element signature="e#28847#28848#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3039,24 +3004,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/io/ByteArrayOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="159" column="17" selection-start-line="158" selection-end-line="163" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/client/OfficeInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -3078,10 +3029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="696" column="22" selection-start-line="696" selection-start-column="22" selection-end-line="696" selection-end-column="22" />
-          <folding>
-            <element signature="e#20137#20138#0" expanded="true" />
-            <element signature="e#20178#20179#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3106,13 +3053,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/agent/OfficeServiceAgent.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="54" column="92" selection-start-line="54" selection-start-column="92" selection-end-line="54" selection-end-column="92" />
+        <state relative-caret-position="165">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/java/io/ByteArrayOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#2173#2174#0" expanded="true" />
+            <element signature="e#2197#2198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/MOfficeClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/agent/AgentMessageService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3125,48 +3096,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/MOfficeClientService.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-26/android/os/Parcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="252">
+          <caret line="1883" column="22" selection-start-line="1883" selection-start-column="22" selection-end-line="1883" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/agent/OfficeServiceAgent.class">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="284">
+          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3043#3044#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/agent/OfficeServiceAgentImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
+        <state relative-caret-position="525">
           <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/floatingview/service/FloatServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="1903" column="34" selection-start-line="1903" selection-start-column="34" selection-end-line="1903" selection-end-column="34" />
+        <state relative-caret-position="468">
+          <caret line="825" column="13" selection-start-line="825" selection-start-column="13" selection-end-line="825" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#52474#52475#0" expanded="true" />
@@ -3179,31 +3139,56 @@
             <element signature="e#56085#56086#0" expanded="true" />
             <element signature="e#56155#56156#0" expanded="true" />
             <element signature="e#56185#56186#0" expanded="true" />
-            <element signature="e#64655#64656#0" expanded="true" />
-            <element signature="e#64696#64697#0" expanded="true" />
-            <element signature="e#64742#64743#0" expanded="true" />
-            <element signature="e#64786#64787#0" expanded="true" />
-            <element signature="e#64828#64829#0" expanded="true" />
-            <element signature="e#64868#64869#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/fileManager/ListFileActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/UploadFileThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="435">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/client/OfficeEventListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="277" column="5" selection-start-line="277" selection-start-column="5" selection-end-line="277" selection-end-column="5" />
           <folding>
-            <element signature="e#2921#2922#0" expanded="true" />
-            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/doc/readme.md">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/wps/moffice/demo/client/OfficeEventListenerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="474">
+          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/app/libs/moffice-service.jar!/cn/wps/moffice/client/OfficeInputStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="method#asInterface#0;class#Stub#0;class#OfficeInputStream#0" />
+          </folding>
         </state>
       </provider>
     </entry>

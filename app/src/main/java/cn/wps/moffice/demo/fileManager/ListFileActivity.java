@@ -58,7 +58,7 @@ public class ListFileActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        Log.v("----->",Environment.getExternalStorageDirectory().getAbsolutePath());
         currentParent = root;
         currentFiles = root.listFiles();
         if (sort.hideFileNum(currentFiles) == currentFiles.length) {//如果目录下都是隐藏文件就返回

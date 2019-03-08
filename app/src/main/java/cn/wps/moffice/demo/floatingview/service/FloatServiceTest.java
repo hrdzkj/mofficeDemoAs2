@@ -31,7 +31,6 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.blankj.utilcode.util.AppUtils;
 
 import cn.wps.moffice.client.AllowChangeCallBack;
 import cn.wps.moffice.demo.MyApplication;
